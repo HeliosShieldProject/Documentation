@@ -119,6 +119,11 @@ const config = {
         },
         searchPagePath: "search",
       },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
     }),
 
   plugins: [
