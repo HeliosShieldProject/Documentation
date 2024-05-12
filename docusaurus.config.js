@@ -108,7 +108,24 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.oneDark,
       },
+      algolia: {
+        appId: "asd",
+        apiKey: "YOUR_SEARCH_API_KEY",
+        indexName: "YOUR_INDEX_NAME",
+        contextualSearch: true,
+        replaceSearchResultPathname: {
+          from: "/docs/", // or as RegExp: /\/docs\//
+          to: "/",
+        },
+        searchPagePath: "search",
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
     }),
+
   plugins: [
     [
       "@docusaurus/plugin-ideal-image",
